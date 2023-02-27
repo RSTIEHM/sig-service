@@ -20,16 +20,18 @@ $sfgEmail;
 
 if(isset($_POST)) {
   $data = file_get_contents("php://input");
-  // var_dump($data);
-  $query = "INSERT INTO `requests` (`request`) VALUES ('$data')";
-  $result = mysqli_query($con, $query);
-  if (!$result) {
-    die("FAILED" . mysqli_error($con));
-  } else {
-    $entry = json_decode($data, true);
-    $entry["test"] = "From PHPXXXXX";
-    echo "Success!!!";
-  }
+  $decode = json_decode($data);
+  // LOOP OVER $decode -> create 
+  var_dump($decode);
+  // $query = "INSERT INTO `requests` (`request`) VALUES ('$data')";
+  // $result = mysqli_query($con, $query);
+  // if (!$result) {
+  //   die("FAILED" . mysqli_error($con));
+  // } else {
+  //   $entry = json_decode($data, true);
+  //   $entry["test"] = "From PHPXXXXX";
+  //   echo "Success!!!";
+  // }
 
 }
 

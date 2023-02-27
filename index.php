@@ -263,7 +263,7 @@
         console.log("BEFORE DATA")
         console.log(data)
         console.log("AFTER DATA")
-        window.location.assign("./success.php");
+        // window.location.assign("./success.php");
       })
 
     })
