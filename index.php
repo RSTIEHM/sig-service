@@ -261,7 +261,8 @@
         return response.text()
       }).then(function(data) {
         console.log("BEFORE DATA")
-        console.log(data)
+        let container = document.querySelector(".container")
+        container.innerHTML = data
         console.log("AFTER DATA")
         // window.location.assign("./success.php");
       })
