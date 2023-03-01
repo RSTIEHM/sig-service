@@ -27,7 +27,7 @@ if(isset($_POST)) {
     $html .= "<p>{$k} - {$v}</p>";
   } 
   // MAIL FUNCTION NEEDS TO BE HERE
-  $to = "Ray Diaz";
+  $to = "richardstiehm@gmail.com";
   $subject = "Test Email";
   $from = "rstiehm@advisorsacademy.com";
   $reply = "rstiehm@advisorsacademy.com";
